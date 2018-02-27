@@ -18,6 +18,8 @@ function saveDetails(details) {
 }
 
 function sendPushMessage() {
+  const publicElement = document.querySelector('#input-js-public-key');
+  const privateElement = document.querySelector('#input-js-private-key');
   const subscriptionTextArea = document.querySelector('#push-subscription');
   const textToSendTextArea = document.querySelector('#push-data');
 
@@ -26,7 +28,11 @@ function sendPushMessage() {
 
   saveDetails({
     subscription: subscriptionString,
-    data: dataString
+    data: dataString,
+    applicationKeys: {
+      public: publicElement.value,
+      private: privateElement.value,
+    }
   });
 
   if (subscriptionString.length === 0 ) {
@@ -50,9 +56,6 @@ function sendPushMessage() {
       'in Chrome?')
     );
   }
-
-  const publicElement = document.querySelector('#input-js-public-key');
-  const privateElement = document.querySelector('#input-js-private-key');
 
   return fetch('/api/send-push-msg', {
     method: 'POST',
@@ -95,9 +98,13 @@ function initialiseUI() {
 
   const previousDetails = getDetails();
   if (previousDetails) {
+    const publicElement = document.querySelector('#input-js-public-key');
+    const privateElement = document.querySelector('#input-js-private-key');
     const subscriptionTextArea = document.querySelector('#push-subscription');
     const textToSendTextArea = document.querySelector('#push-data');
 
+    publicElement.value = previousDetails.applicationKeys.public;
+    privateElement.value = previousDetails.applicationKeys.private;
     subscriptionTextArea.value = previousDetails.subscription;
     textToSendTextArea.value = previousDetails.data;
   }
