@@ -51,8 +51,8 @@ function sendPushMessage() {
     );
   }
 
-  const publicElement = document.querySelector('.js-public-key');
-  const privateElement = document.querySelector('.js-private-key');
+  const publicElement = document.querySelector('#input-js-public-key');
+  const privateElement = document.querySelector('#input-js-private-key');
 
   return fetch('/api/send-push-msg', {
     method: 'POST',
@@ -63,8 +63,8 @@ function sendPushMessage() {
       subscription: subscriptionObject,
       data: dataString,
       applicationKeys: {
-        public: publicElement.textContent,
-        private: privateElement.textContent,
+        public: publicElement.value,
+        private: privateElement.value,
       }
     })
   })

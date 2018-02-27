@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,13 +23,16 @@
   <main>
     <section>
       <h3>Application Server Keys</h3>
-      <p>Application server keys are used to idenitfy your application server
-        with a push service.</p>
+      <p>Application server keys are used to idenitfy your application server with a push service.</p>
 
-      <p><strong>Public Key</strong></p>
+      <p>
+        <strong>Public Key</strong>
+      </p>
       <pre><code class="js-public-key">Loading...</code></pre>
 
-      <p><strong>Private Key</strong></p>
+      <p>
+        <strong>Private Key</strong>
+      </p>
       <pre><code class="js-private-key">Loading...</code></pre>
 
       <p>
@@ -47,22 +51,35 @@
         you can send a message below.
       </p>
 
-      <p><strong>Public Key</strong></p>
-      <input><code class="js-public-key">Loading...</code></input>
-
-      <p><strong>Private Key</strong></p>
-      <input><code class="js-private-key">Loading...</code></input>
-
-
-      <h6><strong>Subscription to Send To</strong></h6>
+      <h6>
+        <strong>Public Key</strong>
+      </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <textarea class="mdl-textfield__input" type="text" rows= "3" id="push-subscription" ></textarea>
+        <input class="mdl-textfield__input" id="input-js-public-key">
+        <label class="mdl-textfield__label" for="input-js-public-key">Add Public key Here....</label>
+      </div>
+
+      <h6>
+        <strong>Private Key</strong>
+      </h6>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" id="input-js-private-key">
+        <label class="mdl-textfield__label" for="input-js-private-key">Add Private key Here....</label>
+      </div>
+
+      <h6>
+        <strong>Subscription to Send To</strong>
+      </h6>
+      <div class="mdl-textfield mdl-js-textfield">
+        <textarea class="mdl-textfield__input" type="text" rows="3" id="push-subscription"></textarea>
         <label class="mdl-textfield__label" for="push-subscription">Add Push Subscription Here....</label>
       </div>
 
-      <h6><strong>Text to Send</strong></h6>
+      <h6>
+        <strong>Text to Send</strong>
+      </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <textarea class="mdl-textfield__input" type="text" rows= "3" id="push-data" ></textarea>
+        <textarea class="mdl-textfield__input" type="text" rows="3" id="push-data"></textarea>
         <label class="mdl-textfield__label" for="push-data">Add Push Text Here....</label>
       </div>
 
@@ -77,14 +94,12 @@
       <h3>Sending Messages from Your Server</h3>
       <div class="sending-own-server">
         <p>
-          This site is here to make it easy to get going
-          with sending a push message, but it's obviously not helpful for sending
-          push messages from your site.
+          This site is here to make it easy to get going with sending a push message, but it's obviously not helpful for sending push
+          messages from your site.
         </p>
         <p>
           To send push messages from your own server,
-          <a href="https://github.com/web-push-libs/">use one of the libraries
-          available here</a>.
+          <a href="https://github.com/web-push-libs/">use one of the libraries available here</a>.
         </p>
       </div>
     </section>
@@ -93,7 +108,9 @@
 
   <footer>
     <div>
-      The code for this site is <a href="https://glitch.com/edit/#!/web-push-codelab">on Glitch</a> and the <a href="https://codelabs.developers.google.com/codelabs/push-notifications/">codelab is here</a>.
+      The code for this site is
+      <a href="https://glitch.com/edit/#!/web-push-codelab">on Glitch</a> and the
+      <a href="https://codelabs.developers.google.com/codelabs/push-notifications/">codelab is here</a>.
     </div>
   </footer>
 
@@ -102,4 +119,5 @@
 
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
+
 </html>
