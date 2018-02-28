@@ -87,10 +87,6 @@ function initialiseUI() {
     sendBtn.disabled = true;
 
     sendPushMessage()
-    .catch((err) => {
-      console.error(err);
-      window.alert(err.message);
-    })
     .then(() => {
       sendBtn.disabled = false;
     });
