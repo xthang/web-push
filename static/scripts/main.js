@@ -18,7 +18,7 @@ function initialiseUI() {
    getDefault.addEventListener('click', () => {
       getDefault.disabled = true;
       getDefaultData();
-      sendBtn.disabled = false;
+      getDefault.disabled = false;
    });
 
    const previousDetails = getDetails();
