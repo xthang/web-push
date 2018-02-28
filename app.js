@@ -40,16 +40,16 @@ app.post('/api/send-push-msg', (req, res) => {
     req.body.data,
     options
   )
-    .then(() => {
-      res.status(200).send({ success: true });
-    })
-    .catch((err) => {
-      if (err.statusCode) {
-        res.status(err.statusCode).send(err.body);
-      } else {
-        res.status(400).send(err.message);
-      }
-    });
+  .then(() => {
+    res.status(200).send({success: true});
+  })
+  .catch((err) => {
+    if (err.statusCode) {
+      res.status(err.statusCode).send(err.body);
+    } else {
+      res.status(400).send(err.message);
+    }
+  });
 });
 
 app.use('/', express.static('static'));
