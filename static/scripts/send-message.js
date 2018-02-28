@@ -27,12 +27,12 @@ function sendPushMessage() {
   const dataString = textToSendTextArea.value;
 
   saveDetails({
-    subscription: subscriptionString,
-    data: dataString,
     applicationKeys: {
       public: publicElement.value,
       private: privateElement.value,
-    }
+    },
+    subscription: subscriptionString,
+    data: dataString
   });
 
   if (subscriptionString.length === 0) {
@@ -63,11 +63,13 @@ function sendPushMessage() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      subscription: subscriptionObject,
-      data: dataString,
       applicationKeys: {
         public: publicElement.value,
         private: privateElement.value,
+      },
+      subscription: subscriptionObject,
+      data: { 
+        body: dataString 
       }
     })
   })
