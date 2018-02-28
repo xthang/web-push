@@ -14,22 +14,22 @@ function initialiseUI() {
          });
    });
 
-   const getDefaultKeys = document.querySelector('#get-default-keys');
-   getDefaultKeys.addEventListener('click', () => {
+   const getDefaultKeysBtn = document.querySelector('#get-default-keys');
+   getDefaultKeysBtn.addEventListener('click', () => {
       this.disabled = true;
       getDefaultKeys();
       this.disabled = false;
    });
 
-   const getDefaultSubChrome = document.querySelector('#get-default-sub-chrome');
-   getDefaultSubChrome.addEventListener('click', () => {
+   const getDefaultSubChromeBtn = document.querySelector('#get-default-sub-chrome');
+   getDefaultSubChromeBtn.addEventListener('click', () => {
       this.disabled = true;
       getDefaultSubscription("chrome");
       this.disabled = false;
    });
 
-   const getDefaultSubFirefox = document.querySelector('#get-default-sub-firefox');
-   getDefaultSubFirefox.addEventListener('click', () => {
+   const getDefaultSubFirefoxBtn = document.querySelector('#get-default-sub-firefox');
+   getDefaultSubFirefoxBtn.addEventListener('click', () => {
       this.disabled = true;
       getDefaultSubscription("firefox");
       this.disabled = false;
