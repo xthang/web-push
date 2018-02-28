@@ -18,8 +18,8 @@ function saveDetails(details) {
 }
 
 function sendPushMessage() {
-  const publicElement = document.querySelector('#input-js-public-key');
-  const privateElement = document.querySelector('#input-js-private-key');
+  const publicElement = document.querySelector('#input-public-key');
+  const privateElement = document.querySelector('#input-private-key');
   const subscriptionTextArea = document.querySelector('#push-subscription');
   const textToSendTextArea = document.querySelector('#push-data');
 
@@ -82,7 +82,7 @@ function sendPushMessage() {
 }
 
 function initialiseUI() {
-  const sendBtn = document.querySelector('.js-send-push');
+  const sendBtn = document.querySelector('#js-send-push');
   sendBtn.addEventListener('click', () => {
     sendBtn.disabled = true;
 
@@ -96,16 +96,19 @@ function initialiseUI() {
     });
   });
 
+  const getDefault = document.querySelector('#get-default');
+  getDefault.addEventListener('click', getDefaultData);
+
   const previousDetails = getDetails();
   if (previousDetails) {
-    const publicElement = document.querySelector('#input-js-public-key');
-    const privateElement = document.querySelector('#input-js-private-key');
-    const subscriptionTextArea = document.querySelector('#push-subscription');
+    const defaultPublicElement = document.querySelector('#input-public-key');
+    const defaultPrivateElement = document.querySelector('#input-private-key');
+    const defaultSubscriptionTextArea = document.querySelector('#push-subscription');
     const textToSendTextArea = document.querySelector('#push-data');
 
-    publicElement.value = previousDetails.applicationKeys.public;
-    privateElement.value = previousDetails.applicationKeys.private;
-    subscriptionTextArea.value = previousDetails.subscription;
+    defaultPublicElement.value = previousDetails.applicationKeys.public;
+    defaultPrivateElement.value = previousDetails.applicationKeys.private;
+    defaultSubscriptionTextArea.value = previousDetails.subscription;
     textToSendTextArea.value = previousDetails.data;
   }
 

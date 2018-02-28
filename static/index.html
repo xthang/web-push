@@ -43,7 +43,7 @@
     </section>
 
     <section>
-      <h3>Codelab Message Sending</h3>
+      <h3>XThang Message Sending</h3>
 
       <p>
         When you are going through our
@@ -55,36 +55,40 @@
         <strong>Public Key</strong>
       </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" id="input-js-public-key">
-        <label class="mdl-textfield__label" for="input-js-public-key">Add Public key Here....</label>
+        <input class="mdl-textfield__input" id="input-public-key">
+        <label class="mdl-textfield__label" for="input-public-key">Add Public key Here....</label>
       </div>
 
       <h6>
         <strong>Private Key</strong>
       </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" id="input-js-private-key">
-        <label class="mdl-textfield__label" for="input-js-private-key">Add Private key Here....</label>
+        <input class="mdl-textfield__input" id="input-private-key">
+        <label class="mdl-textfield__label" for="input-private-key">Add Private key Here....</label>
       </div>
 
       <h6>
         <strong>Subscription to Send To</strong>
       </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <textarea class="mdl-textfield__input" type="text" rows="3" id="push-subscription"></textarea>
+        <textarea class="mdl-textfield__input textfield__input" type="text" rows="3" id="push-subscription"></textarea>
         <label class="mdl-textfield__label" for="push-subscription">Add Push Subscription Here....</label>
       </div>
+
+      <button class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="get-default">
+        Get default Keys and Subscription
+      </button>
 
       <h6>
         <strong>Text to Send</strong>
       </h6>
       <div class="mdl-textfield mdl-js-textfield">
-        <textarea class="mdl-textfield__input" type="text" rows="3" id="push-data"></textarea>
+        <textarea class="mdl-textfield__input textfield__input" type="text" rows="3" id="push-data"></textarea>
         <label class="mdl-textfield__label" for="push-data">Add Push Text Here....</label>
       </div>
 
       <p>
-        <button disabled class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <button disabled class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="js-send-push">
           Send Push Message
         </button>
       </p>
@@ -116,6 +120,7 @@
 
   <script src="scripts/application-server-key.js"></script>
   <script src="scripts/send-message.js"></script>
+  <script type="text/javascript" src="scripts/getDefaultData.js"></script>
 
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
