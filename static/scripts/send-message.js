@@ -105,7 +105,7 @@ function initialiseUI() {
       window.alert(err.message);
     })
     .then(() => {
-      sendBtn.disabled = false;
+      getDefault.disabled = false;
     });
   });
 
