@@ -3,7 +3,6 @@ function getDefaultData() {
    xmlhttpKeys.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
          defaultAppKeys = this.response;
-         console.log(defaultAppKeys);
          const defaultPublicElement = document.querySelector('#input-public-key');
          const defaultPrivateElement = document.querySelector('#input-private-key');
          defaultPublicElement.value = defaultAppKeys.applicationKeys.public;
