@@ -97,7 +97,17 @@ function initialiseUI() {
   });
 
   const getDefault = document.querySelector('#get-default');
-  getDefault.addEventListener('click', getDefaultData);
+  getDefault.addEventListener('click', () => {
+    getDefault.disabled = true;
+    getDefaultData()
+    .catch((err) => {
+      console.error(err);
+      window.alert(err.message);
+    })
+    .then(() => {
+      sendBtn.disabled = false;
+    });
+  });
 
   const previousDetails = getDetails();
   if (previousDetails) {
