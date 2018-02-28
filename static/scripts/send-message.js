@@ -68,9 +68,7 @@ function sendPushMessage() {
         private: privateElement.value,
       },
       subscription: subscriptionObject,
-      data: { 
-        body: dataString 
-      }
+      data: dataString
     })
   })
     .then((response) => {
