@@ -1,10 +1,17 @@
 {
-   "default": {
+   "chrome": {
       "endpoint": "https://fcm.googleapis.com/fcm/send/e3UemvnFWho:APA91bEKRDqrg0mHAYEgMKMYZNRRk-oyKGUPCXE8RxU1y4VZS4dsNiPhEnbxD6pfUkvdtPJkrFkcZJP_m__5r5QTVk4LhYOr2Qs3rP_GIQ_w8wgFdAVj0ULucHVuJWOV_pYZC1GSIaXe",
       "expirationTime": null,
       "keys": {
          "p256dh": "BGOJNQbvtVOTo7cgaxdLGXOTjIXNl9keKUurxd0W7AJvA_K_yXY34pDYQ1qj7ENps1e2PIJXrb5r9k6_6jxMb6g=",
          "auth": "MHF7swqGpUg1b6X5TeQOfQ=="
+      }
+   },
+   "firefox": {
+      "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABalsR9DnUH8zuz9ZyPMRV2U5M2AJLNfuhu4cqQbJzowf1uC7-cAxwajLTc1siFk3Ss_pAcFCpOhyBH1CMDpTonjJnT1zm69AKRnH7_WDCpFk2sie880pWpUIlovNB5mwLgUC8dxZO_bIFUALCWyUV_1febOZVRqi3wHykbgK-bGC4P3kw",
+      "keys": {
+         "auth": "y0DKTlkeZCUC3VOErur1tQ",
+         "p256dh": "BDbHtIiWmq7R4_WzZ9A98DNdYs9lisxyuD4TWHO-wMrqa2OP1HAwRGeLHj7ntTPxhTCFW_DCbBehibi1vhCoZvY"
       }
    }
 }

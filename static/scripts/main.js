@@ -14,11 +14,25 @@ function initialiseUI() {
          });
    });
 
-   const getDefault = document.querySelector('#get-default');
-   getDefault.addEventListener('click', () => {
-      getDefault.disabled = true;
-      getDefaultData();
-      getDefault.disabled = false;
+   const getDefaultKeys = document.querySelector('#get-default-keys');
+   getDefaultKeys.addEventListener('click', () => {
+      this.disabled = true;
+      getDefaultKeys();
+      this.disabled = false;
+   });
+
+   const getDefaultSubChrome = document.querySelector('#get-default-sub-chrome');
+   getDefaultSubChrome.addEventListener('click', () => {
+      this.disabled = true;
+      getDefaultSubscription("chrome");
+      this.disabled = false;
+   });
+
+   const getDefaultSubFirefox = document.querySelector('#get-default-sub-firefox');
+   getDefaultSubFirefox.addEventListener('click', () => {
+      this.disabled = true;
+      getDefaultSubscription("firefox");
+      this.disabled = false;
    });
 
    const previousDetails = getDetails();
