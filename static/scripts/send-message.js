@@ -87,6 +87,10 @@ function initialiseUI() {
     sendBtn.disabled = true;
 
     sendPushMessage()
+    .catch((err) => {
+      console.error(err);
+      window.alert(err.message);
+    })
     .then(() => {
       sendBtn.disabled = false;
     });
@@ -96,10 +100,6 @@ function initialiseUI() {
   getDefault.addEventListener('click', () => {
     getDefault.disabled = true;
     getDefaultData()
-    .catch((err) => {
-      console.error(err);
-      window.alert(err.message);
-    })
     .then(() => {
       getDefault.disabled = false;
     });
