@@ -20,8 +20,7 @@ function getDefaultSubscription(browser) {
       if (this.readyState == 4 && this.status == 200) {
          defaultSubscription = this.response;
          const defaultSubscriptionTextArea = document.querySelector('#push-subscription');
-         console.log(defaultSubscription.chrome);
-         defaultSubscriptionTextArea.value = JSON.stringify(defaultSubscription.browser);
+         defaultSubscriptionTextArea.value = JSON.stringify(defaultSubscription[browser]);
       }
    };
    xmlhttpSub.open("GET", '/scripts/xmessSubscription.json', true);
