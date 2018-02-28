@@ -50,7 +50,9 @@ section h6 {
 }
 
 button.sub-button {
-  
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
 }
 
 footer {
