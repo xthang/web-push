@@ -35,7 +35,7 @@ function sendPushMessage() {
     }
   });
 
-  if (subscriptionString.length === 0 ) {
+  if (subscriptionString.length === 0) {
     return Promise.reject(new Error('Please provide a push subscription.'));
   }
 
@@ -71,14 +71,14 @@ function sendPushMessage() {
       }
     })
   })
-  .then((response) => {
-    if (response.status !== 200) {
-      return response.text()
-      .then((responseText) => {
-        throw new Error(responseText);
-      });
-    }
-  });
+    .then((response) => {
+      if (response.status !== 200) {
+        return response.text()
+          .then((responseText) => {
+            throw new Error(responseText);
+          });
+      }
+    });
 }
 
 function initialiseUI() {
@@ -87,22 +87,20 @@ function initialiseUI() {
     sendBtn.disabled = true;
 
     sendPushMessage()
-    .catch((err) => {
-      console.error(err);
-      window.alert(err.message);
-    })
-    .then(() => {
-      sendBtn.disabled = false;
-    });
+      .catch((err) => {
+        console.error(err);
+        window.alert(err.message);
+      })
+      .then(() => {
+        sendBtn.disabled = false;
+      });
   });
 
   const getDefault = document.querySelector('#get-default');
   getDefault.addEventListener('click', () => {
     getDefault.disabled = true;
-    getDefaultData()
-    .then(() => {
-      getDefault.disabled = false;
-    });
+    getDefaultData();
+    sendBtn.disabled = false;
   });
 
   const previousDetails = getDetails();
