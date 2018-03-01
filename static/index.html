@@ -75,6 +75,15 @@
         <label class="mdl-textfield__label" for="push-subscription">Add Push Subscription Here....</label>
       </div>
 
+      <h6>
+        <strong>Text to Send</strong>
+      </h6>
+      <div class="mdl-textfield mdl-js-textfield">
+        <textarea class="mdl-textfield__input textfield__input" type="text" rows="3" id="push-data"></textarea>
+        <label class="mdl-textfield__label" for="push-data">Add Push Text Here....</label>
+      </div>
+
+
       <button class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect sub-button" id="get-default-keys">
         Get default Keys
       </button>
@@ -87,15 +96,7 @@
       <button class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect sub-button" id="get-default-payload">
         Get default Payload
       </button>
-
-      <h6>
-        <strong>Text to Send</strong>
-      </h6>
-      <div class="mdl-textfield mdl-js-textfield">
-        <textarea class="mdl-textfield__input textfield__input" type="text" rows="3" id="push-data"></textarea>
-        <label class="mdl-textfield__label" for="push-data">Add Push Text Here....</label>
-      </div>
-
+      
       <p>
         <button disabled class="js-send-push mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="js-send-push">
           Send Push Message
