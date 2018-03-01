@@ -2,7 +2,7 @@ function getDefaultKeys() {
    var xmlhttpKeys = new XMLHttpRequest();
    xmlhttpKeys.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-         defaultAppKeys = this.response;
+         var defaultAppKeys = this.response;
          const defaultPublicElement = document.querySelector('#input-public-key');
          const defaultPrivateElement = document.querySelector('#input-private-key');
          defaultPublicElement.value = defaultAppKeys.applicationKeys.public;
@@ -18,7 +18,7 @@ function getDefaultSubscription(browser) {
    var xmlhttpSub = new XMLHttpRequest();
    xmlhttpSub.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-         defaultSubscription = this.response;
+         var defaultSubscription = this.response;
          const defaultSubscriptionTextArea = document.querySelector('#push-subscription');
          defaultSubscriptionTextArea.value = JSON.stringify(defaultSubscription[browser]);
       }
@@ -26,4 +26,18 @@ function getDefaultSubscription(browser) {
    xmlhttpSub.open("GET", '/scripts/xmessSubscription.json', true);
    xmlhttpSub.responseType = 'json';
    xmlhttpSub.send();
+}
+
+function getDefaultPayload() {
+   var xmlhttpPayload = new XMLHttpRequest();
+   xmlhttpPayload.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         var defaultPayload = this.response;
+         const defaultSubscriptionTextArea = document.querySelector('#push-payload');
+         defaultSubscriptionTextArea.value = JSON.stringify(defaultPayload);
+      }
+   };
+   xmlhttpPayload.open("GET", '/scripts/defaultPayload.json', true);
+   xmlhttpPayload.responseType = 'json';
+   xmlhttpPayload.send();
 }

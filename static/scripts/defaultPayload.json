@@ -1,0 +1,34 @@
+{
+      "title": "Noti from Ai đó",
+      "options": {
+            "body": "Go die hahaaa",
+            "icon": "https://xtchat.herokuapp.com/images/thin-036_bubble_comment_chat_message-512.png",
+            "badge": "https://i2.wp.com/xbook.xthang.xyz/wp-content/uploads/2018/02/cropped-X-logo-2.png?fit=32%2C32&ssl=1",
+            "timestamp": null,
+            "dir": "rtl",
+            "tag": "noti",
+            "renotify": true,
+            "vibrate": [
+                  500,
+                  110,
+                  500,
+                  110,
+                  450,
+                  110,
+                  200,
+                  110,
+                  170,
+                  40,
+                  450,
+                  110,
+                  200,
+                  110,
+                  170,
+                  40,
+                  500
+            ],
+            "data": {
+                  "pushUrl": "https://xthang.xyz/messages"
+            }
+      }
+}

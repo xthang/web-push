@@ -35,6 +35,13 @@ function initialiseUI() {
       this.disabled = false;
    });
 
+   const getDefaultPayloadBtn = document.querySelector('#get-default-payload');
+   getDefaultPayloadBtn.addEventListener('click', () => {
+      this.disabled = true;
+      getDefaultPayload();
+      this.disabled = false;
+   });
+
    const previousDetails = getDetails();
    if (previousDetails) {
       const defaultPublicElement = document.querySelector('#input-public-key');
