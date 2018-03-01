@@ -33,7 +33,7 @@ function getDefaultPayload() {
    xmlhttpPayload.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
          var defaultPayload = this.response;
-         const defaultSubscriptionTextArea = document.querySelector('#push-payload');
+         const defaultSubscriptionTextArea = document.querySelector('#push-data');
          defaultSubscriptionTextArea.value = JSON.stringify(defaultPayload);
       }
    };
