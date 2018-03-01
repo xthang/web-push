@@ -23,7 +23,7 @@ function initialiseUI() {
 
    const getDefaultSubBtn = document.getElementsByClassName('get-default-sub');
    for (i = 0; i < getDefaultSubBtn.length; i++) {
-      getDefaultSubBtn[i].addEventListener('click', () => {
+      getDefaultSubBtn[0].addEventListener('click', () => {
          this.disabled = true;
          console.log(this);
          const browsername = this.id.slice(16, this.id.length);
