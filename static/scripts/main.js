@@ -25,8 +25,9 @@ function initialiseUI() {
    for (i = 0; i < getDefaultSubBtn.length; i++) {
       getDefaultSubBtn[i].addEventListener('click', () => {
          this.disabled = true;
-         getDefaultSubscription(this.id.slice(16, this.id.length));
-         console.log(this.id.slice(16, this.id.length));
+         const browsername = this.id.slice(16, this.id.length);
+         getDefaultSubscription(browsername);
+         console.log(browsername);
          this.disabled = false;
       })
    };
