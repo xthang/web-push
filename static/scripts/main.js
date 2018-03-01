@@ -22,9 +22,9 @@ function initialiseUI() {
    });
 
    const getDefaultSubBtn = document.getElementsByClassName('get-default-sub');
-   console.log(getDefaultSubBtn[0]);
+   console.log(getDefaultSubBtn.length);
    for (i = 0; i < getDefaultSubBtn.length; i++) {
-      getDefaultSubBtn[0].addEventListener('click', () => {
+      getDefaultSubBtn[i].addEventListener('click', () => {
          this.disabled = true;
          console.log(this);
          const browsername = this.id.slice(16, this.id.length);
