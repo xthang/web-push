@@ -13,5 +13,13 @@
          "auth": "y0DKTlkeZCUC3VOErur1tQ",
          "p256dh": "BDbHtIiWmq7R4_WzZ9A98DNdYs9lisxyuD4TWHO-wMrqa2OP1HAwRGeLHj7ntTPxhTCFW_DCbBehibi1vhCoZvY"
       }
+   },
+   "opera": {
+      "endpoint": "https://fcm.googleapis.com/fcm/send/c8VKzh7ihqc:APA91bHbuKPF7KyZV_Uk1RFjG2c44p7Lxzgsf_l53Ex314EXotBRXNOf7y42VIFuinYauyabqR5KMRL2G3yeTSJztFyKuSZJrKv26XVRnc0SZTwb2HOMVHEF-90BYQjvN26XR0D_YXPX",
+      "expirationTime": null,
+      "keys": {
+         "p256dh": "BE8iC1HvPC1vYYpiCNBx6-lUN0yPTXojqTzfnW3JTacJZ8bav2BDRsSzuZbtGfxkPAIhZvxwbY0jM_EcY8s--08=",
+         "auth": "NY280lyYw1p_8MuU6SWmCg=="
+      }
    }
 }

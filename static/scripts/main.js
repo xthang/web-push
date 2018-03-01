@@ -21,19 +21,15 @@ function initialiseUI() {
       this.disabled = false;
    });
 
-   const getDefaultSubChromeBtn = document.querySelector('#get-default-sub-chrome');
-   getDefaultSubChromeBtn.addEventListener('click', () => {
-      this.disabled = true;
-      getDefaultSubscription("chrome");
-      this.disabled = false;
-   });
-
-   const getDefaultSubFirefoxBtn = document.querySelector('#get-default-sub-firefox');
-   getDefaultSubFirefoxBtn.addEventListener('click', () => {
-      this.disabled = true;
-      getDefaultSubscription("firefox");
-      this.disabled = false;
-   });
+   const getDefaultSubBtn = document.getElementsByClassName('get-default-sub');
+   for (i = 0; i < getDefaultSubBtn.length; i++) {
+      getDefaultSubBtn[i].addEventListener('click', () => {
+         this.disabled = true;
+         getDefaultSubscription(this.id.slice(16, this.id.length));
+         console.log(this.id.slice(16, this.id.length));
+         this.disabled = false;
+      })
+   };
 
    const getDefaultPayloadBtn = document.querySelector('#get-default-payload');
    getDefaultPayloadBtn.addEventListener('click', () => {
