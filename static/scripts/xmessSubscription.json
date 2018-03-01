@@ -15,11 +15,11 @@
       }
    },
    "opera": {
-      "endpoint": "https://fcm.googleapis.com/fcm/send/c8VKzh7ihqc:APA91bHbuKPF7KyZV_Uk1RFjG2c44p7Lxzgsf_l53Ex314EXotBRXNOf7y42VIFuinYauyabqR5KMRL2G3yeTSJztFyKuSZJrKv26XVRnc0SZTwb2HOMVHEF-90BYQjvN26XR0D_YXPX",
+      "endpoint": "https://fcm.googleapis.com/fcm/send/fUP5u91HkiE:APA91bHG1bVszWtyR0eI9ExGHLHXbqfzvmDHw6Iq55JKIoRahV2beaSfIHZP7rP26dlo6cUr9M1n_NguNFzq8EQKEFA1r7SYkV9tFyw17S5CRe8LCtuMXFb5qFIQho6JNos3KqU9jfC6",
       "expirationTime": null,
       "keys": {
-         "p256dh": "BE8iC1HvPC1vYYpiCNBx6-lUN0yPTXojqTzfnW3JTacJZ8bav2BDRsSzuZbtGfxkPAIhZvxwbY0jM_EcY8s--08=",
-         "auth": "NY280lyYw1p_8MuU6SWmCg=="
+         "p256dh": "BDq6F9XNGjfqkbZuQn1u3_iRwa4l2FJNWH5Oqau5PQaBN92rR61IpAUtFw88FJ-YeJFlC320zZDf9GVEB19cpfs=",
+         "auth": "mfKY0re_kWBJ8d7cQar5MA=="
       }
    }
 }
