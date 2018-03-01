@@ -22,6 +22,7 @@ function initialiseUI() {
    });
 
    const getDefaultSubBtn = document.getElementsByClassName('get-default-sub');
+   console.log(getDefaultSubBtn[0]);
    for (i = 0; i < getDefaultSubBtn.length; i++) {
       getDefaultSubBtn[0].addEventListener('click', () => {
          this.disabled = true;
