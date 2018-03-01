@@ -1,13 +1,13 @@
 {
       "title": "Noti from Ai đó",
       "options": {
+            "//": "Visual Options",
             "body": "Go die hahaaa",
             "icon": "https://xtchat.herokuapp.com/images/thin-036_bubble_comment_chat_message-512.png",
+            "image": "https://i2.wp.com/xbook.xthang.xyz/wp-content/uploads/2018/02/cropped-X-logo-2.png?fit=32%2C32&ssl=1",
             "badge": "https://i2.wp.com/xbook.xthang.xyz/wp-content/uploads/2018/02/cropped-X-logo-2.png?fit=32%2C32&ssl=1",
-            "timestamp": null,
             "dir": "rtl",
-            "tag": "noti",
-            "renotify": true,
+            "sound": "<URL String>",
             "vibrate": [
                   500,
                   110,
@@ -27,8 +27,20 @@
                   40,
                   500
             ],
+            
+            "//": "Behavioural Options",
+            "tag": "noti",
             "data": {
                   "pushUrl": "https://xthang.xyz/messages"
-            }
+            },
+            "renotify": true,
+            "requireInteraction": "<boolean>",
+            "silent": "<Boolean>",
+            
+            "//": "Both Visual & Behavioural Options",
+            "actions": "<Array of Strings>",
+
+            "//": "Information Option. No visual affect.",
+            "timestamp": null
       }
 }
