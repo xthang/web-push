@@ -8,10 +8,10 @@
       }
    },
    "firefox": {
-      "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABalsR9DnUH8zuz9ZyPMRV2U5M2AJLNfuhu4cqQbJzowf1uC7-cAxwajLTc1siFk3Ss_pAcFCpOhyBH1CMDpTonjJnT1zm69AKRnH7_WDCpFk2sie880pWpUIlovNB5mwLgUC8dxZO_bIFUALCWyUV_1febOZVRqi3wHykbgK-bGC4P3kw",
+      "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABal68tLHshWjMLtVbmRwqUJXiKBBbOrJ3O0SMwB-L5Fvrpf84ZAvM6k3L_q_cgTezCivGvxPahKMjCIK2mULYpLDjDKiMI-ibmAPs5OaNy2h5FZ2ASFeROiEdOzO4ISiL9YBa01NS469Ih8W3PxZuyU-5hZU8oCfBjafiUCyatqQjeanc",
       "keys": {
-         "auth": "y0DKTlkeZCUC3VOErur1tQ",
-         "p256dh": "BDbHtIiWmq7R4_WzZ9A98DNdYs9lisxyuD4TWHO-wMrqa2OP1HAwRGeLHj7ntTPxhTCFW_DCbBehibi1vhCoZvY"
+         "auth": "YkZvY_jFjiAYJko0dvQp0w",
+         "p256dh": "BN6SRm2a7CTTt2GMk4hkSWk-5oOH1iVOdPUx9d80jQzS_F5qMHzs2FoPgpPxi_y8ftTFOY2O5EXwm4xmOJFeZOc"
       }
    },
    "opera": {
