@@ -25,6 +25,7 @@ function initialiseUI() {
    for (i = 0; i < getDefaultSubBtn.length; i++) {
       getDefaultSubBtn[i].addEventListener('click', () => {
          this.disabled = true;
+         console.log(this);
          const browsername = this.id.slice(16, this.id.length);
          getDefaultSubscription(browsername);
          console.log(browsername);
