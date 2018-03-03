@@ -1,25 +1,18 @@
 {
    "chrome": {
-      "endpoint": "https://fcm.googleapis.com/fcm/send/exWI3_AIUyU:APA91bFnauwFjvmAc1anTMhDyDMLLuaF5A0WnhKMVje5cdiYvEPCXFJtoX1-Rjpk__fFIeDG6b97J2_b3B4U6-srtUrzpOc5hLR0dNhvaIFjWs_F3Pq0BKKEgBA2vHxDuFQ3cYFC-Kiu",
+      "endpoint": "https://fcm.googleapis.com/fcm/send/c8wFrLU-SM8:APA91bGp9PreQEcnpeyDBpUKEP1DAN5bgOjHqndUnb2ANMZTQqTn4C9V7xvw3ZTTaMw2nqMz3vOnKHlilTA_vRhlD5mb_trc_EzfK9XgBjWU8YtfGK_7HjUOCKMUP4gCIbf1jwVCma3K",
       "expirationTime": null,
       "keys": {
-         "p256dh": "BPn-JmpHPAp-gwWQ10RXpb0nz5dqSkTyb-537a7AH2vXrDfXUXwwwjn0h6orVurQ04Bcgg8Voi1t_XlXAc69xqI=",
-         "auth": "PtBcnPZYQ5PAbTVCI7v4Vw=="
+         "p256dh": "BJ7cJJCrzS-eiJBqcOvxgbDkp9oUiCUvVolgF7mxi0yYS1B4pDG6UwI0MEyX4vRudNQeZ9SaUAdhrY0Hxh1z130=",
+         "auth": "zrHxGNVFb1ESKFhdoHvkXw=="
       }
    },
    "firefox": {
-      "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABal68tLHshWjMLtVbmRwqUJXiKBBbOrJ3O0SMwB-L5Fvrpf84ZAvM6k3L_q_cgTezCivGvxPahKMjCIK2mULYpLDjDKiMI-ibmAPs5OaNy2h5FZ2ASFeROiEdOzO4ISiL9YBa01NS469Ih8W3PxZuyU-5hZU8oCfBjafiUCyatqQjeanc",
+      "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABamji0JWrYc7pO0e9LI-bSRK9twSmGcxuxyKWOK64gA9acezL7HqP7RKaSl4fZr6VyoB3yjtgU3Tx1cQRDsiQBuDb__SCVD35ZAl_RZ8oBOriSY99CAcC3rfkmL7xoh72UbInEvTs9HLPleK8NjmHgr9cNBC4aMa1aHTIZwolsPGMR7Tw",
       "keys": {
-         "auth": "YkZvY_jFjiAYJko0dvQp0w",
-         "p256dh": "BN6SRm2a7CTTt2GMk4hkSWk-5oOH1iVOdPUx9d80jQzS_F5qMHzs2FoPgpPxi_y8ftTFOY2O5EXwm4xmOJFeZOc"
+         "auth": "9D9kPWcO9JrqcaLFBKbuYw",
+         "p256dh": "BItFps8Qb0HyxHlGzVNjVUE2geq9Xo1CSCmtdIsVJxTLsT4jhm5fYiBQw5fhEEaLjqmmHNUf9r2AobTj8UKPiWw"
       }
    },
-   "opera": {
-      "endpoint": "https://fcm.googleapis.com/fcm/send/fUP5u91HkiE:APA91bHG1bVszWtyR0eI9ExGHLHXbqfzvmDHw6Iq55JKIoRahV2beaSfIHZP7rP26dlo6cUr9M1n_NguNFzq8EQKEFA1r7SYkV9tFyw17S5CRe8LCtuMXFb5qFIQho6JNos3KqU9jfC6",
-      "expirationTime": null,
-      "keys": {
-         "p256dh": "BDq6F9XNGjfqkbZuQn1u3_iRwa4l2FJNWH5Oqau5PQaBN92rR61IpAUtFw88FJ-YeJFlC320zZDf9GVEB19cpfs=",
-         "auth": "mfKY0re_kWBJ8d7cQar5MA=="
-      }
-   }
+   "opera": {}
 }
