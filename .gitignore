@@ -1,2 +1,7 @@
+# System Files
 .DS_Store
 static/.DS_Store
+Thumbs.db
+
+# dependencies
+/node_module s
